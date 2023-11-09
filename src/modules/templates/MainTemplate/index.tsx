@@ -8,7 +8,7 @@ const MainTemplate: React.FC = ({ children }) => {
     <Grid
       w="100%"
       minH='100vw'
-      bgColor="blackAlpha.900"
+      bgColor="primary.900"
       gridTemplateColumns={'15vw 1fr'}
     >
       <SideBar />

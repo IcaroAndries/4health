@@ -1,5 +1,4 @@
-import { Provider } from 'modules/providers/ChakraProvider'
-import MainTemplate from 'modules/templates/MainTemplate'
+import Provider from 'modules/providers/ChakraProvider'
 import React from 'react'
 
 const RootLayout: React.FC = ({ children }) => {
@@ -7,7 +6,7 @@ const RootLayout: React.FC = ({ children }) => {
     <html lang="en">
       <body>
         <Provider>
-          <MainTemplate>{children}</MainTemplate>
+          {children}
         </Provider>
       </body>
     </html>

@@ -1,5 +1,5 @@
 import { Stack, Text } from '@chakra-ui/react'
-import useResponsiveSize from 'modules/shared/hooks/ResponsiveSize'
+import useResponsiveSize from 'modules/_shared/hooks/ResponsiveSize'
 import React from 'react'
 
 const SideBar: React.FC = () => {
@@ -9,13 +9,14 @@ const SideBar: React.FC = () => {
     <Stack
       w='100%'
       h="100%"
-      bgColor='gray.800'
+      bgColor='primary.700'
     >
       <Stack
         p={vw('25px')}
         align='center'
         justify='center'
-        textColor='red.500'
+        textColor='secondary.500'
+        borderBottom='1px solid white'
       >
         <Text
           fontSize={vw('50px')}

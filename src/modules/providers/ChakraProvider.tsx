@@ -2,14 +2,11 @@
 
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
-import { mainTheme } from '../themes/mainTheme'
 import React from 'react'
 
-export function Provider ({
-  children
-}: {
-  children: React.ReactNode
-}): React.ReactElement {
+import { mainTheme } from '../themes/mainTheme'
+
+const Provider: React.FC = ({ children }) => {
   return (
     <CacheProvider>
       <ChakraProvider theme={mainTheme}>
@@ -18,3 +15,5 @@ export function Provider ({
     </CacheProvider>
   )
 }
+
+export default Provider
