@@ -4,6 +4,12 @@ import React from 'react'
 const RootLayout: React.FC = ({ children }) => {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel='icon'
+          type='image/svg+xml'
+          href='/favicon.ico' />
+      </head>
       <body>
         <Provider>
           {children}

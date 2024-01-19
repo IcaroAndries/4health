@@ -1,14 +1,8 @@
-import { Stack, Text } from '@chakra-ui/react'
+import HomeModule from 'modules/pages/Home'
 import React from 'react'
 
 const Home: React.FC = () => {
-  return (
-    <Stack>
-      <Text>
-        Home
-      </Text>
-    </Stack>
-  )
+  return <HomeModule />
 }
 
 export default Home
