@@ -1,14 +1,19 @@
 import Provider from 'modules/providers/ChakraProvider'
 import React from 'react'
 
-const RootLayout: React.FC = ({ children }) => {
+interface Props {
+  children: React.ReactNode
+}
+
+const RootLayout: React.FC<Props> = ({ children }) => {
   return (
     <html lang="en">
       <head>
         <link
           rel='icon'
           type='image/svg+xml'
-          href='/favicon.ico' />
+          href='/light.png'
+        />
       </head>
       <body>
         <Provider>

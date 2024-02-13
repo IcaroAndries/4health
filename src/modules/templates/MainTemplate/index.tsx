@@ -3,7 +3,7 @@ import React from 'react'
 
 import SideBar from './elements/SideBar'
 
-const MainTemplate: React.FC = ({ children }) => {
+const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <Grid
       w="100%"

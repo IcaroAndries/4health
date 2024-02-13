@@ -3,7 +3,12 @@ import React from 'react'
 
 const NavLinks: React.FC = () => {
   return (
-    <HStack>
+    <HStack
+      textColor='white'
+      fontSize='1.5em'
+      fontWeight='600'
+      spacing='2em'
+    >
       <Text>Home</Text>
       <Text>About</Text>
       <Text>Contact</Text>
