@@ -1,11 +1,9 @@
 import Provider from 'modules/providers/ChakraProvider'
 import React from 'react'
 
-interface Props {
+const RootLayout: React.FC<{
   children: React.ReactNode
-}
-
-const RootLayout: React.FC<Props> = ({ children }) => {
+}> = ({ children }) => {
   return (
     <html lang="en">
       <head>
