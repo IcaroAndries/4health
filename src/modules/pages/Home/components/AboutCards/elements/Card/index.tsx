@@ -1,4 +1,8 @@
-import { Box, Stack } from '@chakra-ui/react'
+import {
+  Box,
+  Stack,
+  Text
+} from '@chakra-ui/react'
 import React from 'react'
 
 interface Props {
@@ -9,17 +13,26 @@ interface Props {
 const Card: React.FC<Props> = function ({ title, description }) {
   return (
     <Stack
-      py="1.5em"
-      px="1em"
+      maxW="16em"
+      py="3em"
+      px="1.5em"
+      spacing="0.8em"
+      justify="center"
+      align="center"
+      border="2px solid"
+      borderColor="blackAlpha.700"
+      borderRadius="10px"
     >
       <Box
-        w="3em"
-        h="3em"
+        w="4em"
+        h="4em"
         borderRadius="50%"
         border="2px solid"
         borderColor="yellow.400"
         p="0.5em"
       />
+      <Text textAlign="center">{title}</Text>
+      <Text textAlign="center">{description}</Text>
     </Stack>
   )
 }

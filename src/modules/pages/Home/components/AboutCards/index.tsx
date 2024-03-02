@@ -6,7 +6,10 @@ import Card from './elements/Card'
 
 const AboutCards: React.FC = function () {
   return (
-    <HStack>
+    <HStack
+      px="16em"
+      py="5em"
+    >
       {
         homeCards.map((card, index) => <Card
           key={index}
