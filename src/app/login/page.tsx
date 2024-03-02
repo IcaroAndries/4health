@@ -2,7 +2,7 @@
 import { Box, Button, FormControl, FormLabel, Input, Stack, HStack, Checkbox } from '@chakra-ui/react'
 import React from 'react'
 
-const Login = () => {
+const Login: React.FC = function () {
   return (
     <Box
       w="100%"

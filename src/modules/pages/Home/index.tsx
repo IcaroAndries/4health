@@ -2,6 +2,7 @@
 import { Stack } from '@chakra-ui/react'
 import React from 'react'
 
+import AboutCards from './components/AboutCards'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
 import NavBar from './components/NavBar'
@@ -16,6 +17,7 @@ const HomeModule: React.FC = () => {
     >
       <NavBar />
       <Hero />
+      <AboutCards />
       <Footer />
     </Stack>
   )
