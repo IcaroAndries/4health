@@ -1,17 +1,13 @@
 import { HStack, Text } from '@chakra-ui/react'
 import React from 'react'
 
-interface Props {
-  onTop: boolean
-}
-const NavLinks: React.FC<Props> = ({ onTop }) => {
-
+const NavLinks: React.FC = () => {
   return (
     <HStack
       textColor='white'
-      fontSize={onTop ? '2em' : '1.5em'}
+      fontSize={'1.5em'}
       fontWeight='700'
-      spacing={onTop ? '3em' : '2em'}
+      spacing={'2em'}
     >
       <Text>Home</Text>
       <Text>About</Text>

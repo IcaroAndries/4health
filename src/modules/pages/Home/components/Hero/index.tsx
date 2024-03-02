@@ -1,11 +1,20 @@
-import { HStack, Text } from '@chakra-ui/react'
-import React from 'react'
+'use client'
+import { Box } from '@chakra-ui/react'
+import React, { useEffect, useState } from 'react'
 
 const Hero: React.FC = () => {
+  const [currentSlide, setCurrentSlide] = useState(0)
+
+  useEffect(() => {
+    // Your GSAP animation logic here
+  }, [currentSlide])
+
   return (
-    <HStack w='100%'>
-      <Text>Hero</Text>
-    </HStack>
+    <Box
+      minH='700px'
+      bgColor={'blackAlpha.900'}
+    >
+    </Box>
   )
 }
 
