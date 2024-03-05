@@ -1,5 +1,5 @@
-import { uiText } from './uiText'
+import { uiText } from './uiText';
 
 export const uiComponents = {
-  Text: uiText
-}
+  Text: uiText,
+};

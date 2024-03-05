@@ -1,12 +1,10 @@
-import { Stack } from '@chakra-ui/react'
-import React from 'react'
+import { Stack } from '@chakra-ui/react';
+import React from 'react';
 
-const Home: React.FC = () => {
-  return (
-    <Stack>
-      home
-    </Stack>
-  )
-}
+const Home: React.FC = () => (
+  <Stack>
+    home
+  </Stack>
+);
 
-export default Home
+export default Home;

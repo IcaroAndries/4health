@@ -1,4 +1,5 @@
-import React from 'react'
+import { Image } from '@chakra-ui/react';
+import React from 'react';
 
 interface IUseNavItem {
   name: string
@@ -6,14 +7,12 @@ interface IUseNavItem {
   icon: React.ReactElement
 }
 
-const useNav = (): IUseNavItem[] => {
-  return [
-    {
-      name: 'Treinos',
-      path: '/Treinos',
-      icon: <></>
-    }
-  ]
-}
+const useNav = (): IUseNavItem[] => [
+  {
+    name: 'Treinos',
+    path: '/Treinos',
+    icon: <Image src="/light.png" w="1em" />,
+  },
+];
 
-export default useNav
+export default useNav;

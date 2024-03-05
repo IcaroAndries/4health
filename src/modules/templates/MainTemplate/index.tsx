@@ -1,27 +1,25 @@
-import { Grid, Stack } from '@chakra-ui/react'
-import React from 'react'
+import { Grid, Stack } from '@chakra-ui/react';
+import React from 'react';
 
-import SideBar from './elements/SideBar'
+import SideBar from './elements/SideBar';
 
-const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  return (
-    <Grid
+const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <Grid
+    w="100%"
+    minH="100vw"
+    bgColor="whiteAlpha.400"
+    gridTemplateColumns="auto 1fr"
+  >
+    <SideBar />
+    <Stack
       w="100%"
-      minH='100vw'
-      bgColor="primary.900"
-      gridTemplateColumns={'15vw 1fr'}
+      h="100%"
+      align="center"
+      justify="center"
     >
-      <SideBar />
-      <Stack
-        w='100%'
-        h='100%'
-        align='center'
-        justify='center'
-      >
-        {children}
-      </Stack>
-    </Grid >
-  )
-}
+      {children}
+    </Stack>
+  </Grid>
+);
 
-export default MainTemplate
+export default MainTemplate;

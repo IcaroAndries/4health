@@ -7,6 +7,6 @@ interface IHomeCard {
 export const homeCards: IHomeCard[] = [
   {
     title: 'About',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-  }
-]
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+];

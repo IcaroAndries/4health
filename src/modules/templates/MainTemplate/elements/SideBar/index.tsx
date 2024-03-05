@@ -1,35 +1,52 @@
-import { Stack, Text } from '@chakra-ui/react'
-import useResponsiveSize from 'modules/_shared/hooks/ResponsiveSize'
-import React from 'react'
+'use client';
+
+import {
+  Image,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
+import React, { useState } from 'react';
+
+import useResponsiveSize from 'modules/_shared/hooks/ResponsiveSize';
 
 const SideBar: React.FC = () => {
-  const { vw } = useResponsiveSize()
+  const { vw } = useResponsiveSize();
+
+  const [colapsed, setCollapsed] = useState<boolean>(false);
 
   return (
     <Stack
-      w='100%'
-      h="100%"
-      bgColor='primary.700'
+      w="100%"
+      h={colapsed ? 'auto' : '100%'}
+      bgColor="blackAlpha.900"
+      spacing="0px"
+      p={vw('10px')}
     >
       <Stack
-        p={vw('25px')}
-        align='center'
-        justify='center'
-        textColor='secondary.500'
-        borderBottom='1px solid white'
+        p={vw('15px')}
+        spacing={vw('8px')}
+        align="center"
+        justify="center"
+        direction="row"
       >
+        <Image
+          src="/light.png"
+          w="3em"
+          alt="4HealthLogo"
+        />
+
         <Text
-          fontSize={vw('50px')}
-          fontWeight='500'
+          fontSize="3em"
+          textColor="yellow.400"
+          fontWeight="200"
+          borderRadius="0px 10px 10px 0px"
         >
-          Logo
+          4Health
         </Text>
       </Stack>
-      <Stack>
-
-      </Stack>
+      <Stack />
     </Stack>
-  )
-}
+  );
+};
 
-export default SideBar
+export default SideBar;

@@ -8,7 +8,7 @@ export const colors = {
     600: 'blackAlpha.600',
     700: 'blackAlpha.700',
     800: 'blackAlpha.800',
-    900: 'blackAlpha.900'
+    900: 'blackAlpha.900',
   },
   secondary: {
     50: '#FFCDD2',
@@ -20,7 +20,7 @@ export const colors = {
     600: '#D32F2F',
     700: '#C62828',
     800: '#B71C1C',
-    900: '#FF8A80'
+    900: '#FF8A80',
   },
   third: {
     100: 'whiteAlpha.100',
@@ -31,6 +31,6 @@ export const colors = {
     600: 'whiteAlpha.600',
     700: 'whiteAlpha.700',
     800: 'whiteAlpha.800',
-    900: 'whiteAlpha.900'
-  }
-}
+    900: 'whiteAlpha.900',
+  },
+};

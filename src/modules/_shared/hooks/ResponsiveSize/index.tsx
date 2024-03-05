@@ -4,16 +4,16 @@ interface IUseResponsiveSize {
 
 const useResponsiveSize = (): IUseResponsiveSize => {
   const vw = (value: string): string => {
-    const pxValue = parseFloat(value.replace('px', ''))
+    const pxValue = parseFloat(value.replace('px', ''));
 
-    const emValue = pxValue / 16
+    const emValue = pxValue / 16;
 
-    return `${emValue}em`
-  }
+    return `${emValue}em`;
+  };
 
   return {
-    vw
-  }
-}
+    vw,
+  };
+};
 
-export default useResponsiveSize
+export default useResponsiveSize;
