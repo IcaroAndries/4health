@@ -33,7 +33,7 @@ const SideBar: React.FC = () => {
       <Stack
         h="100%"
         w="100%"
-        p={colapsed ? vw('5px') : vw('10px')}
+        p={colapsed ? vw('1px') : vw('10px')}
         transition={trasitionTime}
         spacing="0px"
         position="relative"
@@ -68,22 +68,23 @@ const SideBar: React.FC = () => {
         >
           <Image
             src="/light.png"
-            w="3em"
             alt="4HealthLogo"
+            w={colapsed ? '2em' : '3em'}
+            transition={trasitionTime}
           />
 
-          {
-            !colapsed && (
-              <Text
-                fontSize="3em"
-                textColor="yellow.400"
-                fontWeight="200"
-                borderRadius="0px 10px 10px 0px"
-              >
-                4Health
-              </Text>
-            )
-          }
+          <Text
+            fontSize={colapsed ? '0em' : '3em'}
+            textColor="yellow.400"
+            fontWeight="200"
+            borderRadius="0px 10px 10px 0px"
+            transition={trasitionTime}
+            display={colapsed ? 'none' : 'block'}
+            w={colapsed ? '0px' : 'auto'}
+            h={colapsed ? '0px' : 'auto'}
+          >
+            4Health
+          </Text>
         </Stack>
         <Stack>
           {
