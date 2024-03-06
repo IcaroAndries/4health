@@ -2,6 +2,6 @@ import React from 'react';
 
 import Home from 'modules/athlete/pages/Home';
 
-const UserPage: React.FC = () => <Home />;
+const AthletePage: React.FC = () => <Home />;
 
-export default UserPage;
+export default AthletePage;
