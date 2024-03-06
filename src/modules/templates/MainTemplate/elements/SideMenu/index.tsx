@@ -11,7 +11,7 @@ import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 
 import useResponsiveSize from 'modules/_shared/hooks/use-responsive-size';
 
-const SideBar: React.FC = () => {
+const SideMenu: React.FC = () => {
   const { vw } = useResponsiveSize();
   const trasitionTime = '0.8s';
 
@@ -96,4 +96,4 @@ const SideBar: React.FC = () => {
   );
 };
 
-export default SideBar;
+export default SideMenu;

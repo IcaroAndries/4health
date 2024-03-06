@@ -3,7 +3,7 @@ import React from 'react';
 
 import useResponsiveSize from 'modules/_shared/hooks/use-responsive-size';
 
-import SideBar from './elements/SideBar';
+import SideMenu from './elements/SideMenu';
 import TopMenu from './elements/TopMenu';
 
 const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -16,7 +16,7 @@ const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => 
       bgColor="whiteAlpha.400"
       gridTemplateColumns="auto 1fr"
     >
-      <SideBar />
+      <SideMenu />
       <Stack
         w="100%"
         h="100%"
