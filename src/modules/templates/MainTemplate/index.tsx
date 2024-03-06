@@ -4,7 +4,6 @@ import React from 'react';
 import useResponsiveSize from 'modules/_shared/hooks/use-responsive-size';
 
 import SideMenu from './elements/SideMenu';
-import TopMenu from './elements/TopMenu';
 
 const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { vw } = useResponsiveSize();
@@ -24,7 +23,6 @@ const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => 
         justify="center"
         spacing={vw('60px')}
       >
-        <TopMenu />
         {children}
       </Stack>
     </Grid>

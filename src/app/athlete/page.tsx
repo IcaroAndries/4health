@@ -1,7 +1,7 @@
 import React from 'react';
 
-const UserPage: React.FC = () => (
-  <div>User</div>
-);
+import Home from 'modules/athlete/pages/Home';
+
+const UserPage: React.FC = () => <Home />;
 
 export default UserPage;
