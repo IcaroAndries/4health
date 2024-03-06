@@ -1,3 +1,5 @@
+'use client';
+
 import { useBreakpointValue } from '@chakra-ui/react';
 import { useCallback } from 'react';
 

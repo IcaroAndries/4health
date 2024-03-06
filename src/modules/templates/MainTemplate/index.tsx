@@ -1,6 +1,6 @@
 import {
   Box,
-  Grid,
+  Flex,
   Stack,
 } from '@chakra-ui/react';
 import React from 'react';
@@ -13,11 +13,11 @@ const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => 
   const { vw } = useResponsiveSize();
 
   return (
-    <Grid
+    <Stack
       w="100%"
+      h="100%"
       minH="100vw"
       bgColor="whiteAlpha.400"
-      gridTemplateColumns="auto 1fr"
     >
       <SideMenu />
       <Stack
@@ -29,9 +29,11 @@ const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => 
       >
         {/* still unused box */}
         <Box />
-        {children}
+        <Flex pl={vw('300px')}>
+          {children}
+        </Flex>
       </Stack>
-    </Grid>
+    </Stack>
   );
 };
 export default MainTemplate;

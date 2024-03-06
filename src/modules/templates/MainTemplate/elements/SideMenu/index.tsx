@@ -19,9 +19,8 @@ const SideMenu: React.FC = () => {
 
   return (
     <Stack
-      w="100%"
-      h={colapsed ? 'auto' : '100%'}
-      maxH={colapsed ? '80vh' : '100vh'}
+      w="fit-content"
+      h={colapsed ? '80vh' : '100vh'}
       top={colapsed ? '10vh' : '0px'}
       bgColor="blackAlpha.900"
       spacing="0px"
