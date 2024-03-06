@@ -3,7 +3,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
 
-import { CacheProvider } from '@chakra-ui/next-js';
+// import { CacheProvider } from '@chakra-ui/next-js';
 
 import { mainTheme } from '../themes/mainTheme';
 
@@ -12,11 +12,11 @@ interface Props {
 }
 
 const Provider: React.FC<Props> = ({ children }) => (
-  <CacheProvider>
-    <ChakraProvider theme={mainTheme}>
-      {children}
-    </ChakraProvider>
-  </CacheProvider>
+  // <CacheProvider>
+  <ChakraProvider theme={mainTheme}>
+    {children}
+  </ChakraProvider>
+  // </CacheProvider>
 );
 
 export default Provider;
