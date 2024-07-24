@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HomeModule from 'modules/pages/Home';
+import HomeModule from 'modules/pages/home';
 
 const Home: React.FC = () => <HomeModule />;
 
