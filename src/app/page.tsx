@@ -1,7 +1,6 @@
+import { Box } from '@chakra-ui/react';
 import React from 'react';
 
-import HomeModule from 'modules/pages/home';
-
-const Home: React.FC = () => <HomeModule />;
+const Home: React.FC = () => <Box />;
 
 export default Home;
