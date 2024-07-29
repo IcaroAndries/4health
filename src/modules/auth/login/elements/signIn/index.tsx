@@ -4,16 +4,14 @@ import {
   Button,
   Checkbox,
   HStack,
-  IconButton,
   Image,
   Input,
   Stack,
   Text,
 } from '@chakra-ui/react';
 import React from 'react';
-import { FaFacebook, FaApple } from 'react-icons/fa';
-import { FcGoogle } from 'react-icons/fc';
 
+import loginLogo from 'assets/logo/loginLogo.svg';
 import { useImmer } from 'use-immer';
 
 const SignIn: React.FC = () => {
@@ -50,15 +48,17 @@ const SignIn: React.FC = () => {
       <Stack w="100%" align="center" maxW="40em">
         <Stack w="100%" alignItems="center">
           <Stack w="100%" align="center" spacing="2px" mb="2em">
-            <Image src="/logo/greenLogo.svg" />
+            <Image src={loginLogo.src} />
             <Text fontSize="4xl" fontWeight="bold" color="primary">
               Welcome Back!
             </Text>
-            <Text fontSize="sm" color="#7A7A7A" fontWeight="600">
+            {/* <Text fontSize="sm" color="#7A7A7A" fontWeight="600">
               Log in with
-            </Text>
+            </Text> */}
           </Stack>
 
+          {/*
+            * avoiding others login methods by now
           <Stack w="100%" align="center">
             <HStack w="100%" spacing="1em">
               <IconButton
@@ -86,7 +86,7 @@ const SignIn: React.FC = () => {
             <Text fontSize="lg" fontWeight="bold" color="#7A7A7A" my="0.5em">
               or
             </Text>
-          </Stack>
+          </Stack> */}
 
           <Stack spacing="1.25em" w="100%">
             <Input
