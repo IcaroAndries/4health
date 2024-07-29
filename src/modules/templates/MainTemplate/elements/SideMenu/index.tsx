@@ -20,8 +20,9 @@ const SideMenu: React.FC = () => {
   return (
     <Stack
       w="fit-content"
-      h="100vh"
-      bgColor="blackAlpha.900"
+      h="100%"
+      minH="100vh"
+      bgColor="primary"
       spacing="0px"
       zIndex={2}
       transition={trasitionTime}
