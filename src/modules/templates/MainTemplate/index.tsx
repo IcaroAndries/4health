@@ -1,8 +1,4 @@
-import {
-  Box,
-  Flex,
-  Stack,
-} from '@chakra-ui/react';
+import { Flex, Stack } from '@chakra-ui/react';
 import React from 'react';
 
 import useResponsiveSize from 'modules/_shared/hooks/use-responsive-size';
@@ -27,9 +23,7 @@ const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => 
         justify="center"
         spacing={vw('60px')}
       >
-        {/* still unused box */}
-        <Box />
-        <Flex pl={vw('300px')}>
+        <Flex pl={vw('250px', '0px')}>
           {children}
         </Flex>
       </Stack>
