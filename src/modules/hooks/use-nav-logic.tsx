@@ -1,5 +1,12 @@
-import { Image } from '@chakra-ui/react';
 import React from 'react';
+
+import {
+  CalendarIcon,
+  OverviewIcon,
+  ProfileIcon,
+  StudentsIcon,
+  TrainsIcon,
+} from 'modules/common/icons';
 
 interface IUseNavItem {
   name: string
@@ -7,12 +14,37 @@ interface IUseNavItem {
   icon: React.ReactElement
 }
 
-const useNav = (): IUseNavItem[] => [
-  {
-    name: 'Treinos',
-    path: '/Treinos',
-    icon: <Image src="/light.png" w="1em" />,
-  },
-];
+interface IUserList {
+  [key: string]: IUseNavItem[]
+}
 
+const useNav: IUserList = {
+  Athlete: [
+    {
+      name: 'Overview',
+      path: '/',
+      icon: <OverviewIcon />,
+    },
+    {
+      name: 'Meu Perfil',
+      path: '/profile',
+      icon: <ProfileIcon />,
+    },
+    {
+      name: 'Meu Perfil',
+      path: '/profile',
+      icon: <StudentsIcon />,
+    },
+    {
+      name: 'Meu Perfil',
+      path: '/profile',
+      icon: <CalendarIcon />,
+    },
+    {
+      name: 'Meu Perfil',
+      path: '/profile',
+      icon: <TrainsIcon />,
+    },
+  ],
+};
 export default useNav;

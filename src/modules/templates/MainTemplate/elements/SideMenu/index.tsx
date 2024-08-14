@@ -10,12 +10,17 @@ import React from 'react';
 import whiteLogo from 'assets/logo/whiteLogo.svg';
 import { motion } from 'framer-motion';
 import useResponsiveSize from 'modules/_shared/hooks/use-responsive-size';
+import useNav from 'modules/hooks/use-nav-logic';
+
+import SideItem from './item';
 
 const SideMenu: React.FC = () => {
   const { vw } = useResponsiveSize();
   const trasitionConfig = '0.4s';
 
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const list = useNav.Athlete;
 
   return (
     <Stack
@@ -40,7 +45,8 @@ const SideMenu: React.FC = () => {
           w="100%"
           p={vw('10px')}
           transition={trasitionConfig}
-          spacing="0px"
+          align="center"
+          spacing={16}
         >
           <Stack
             p={vw('15px')}
@@ -57,9 +63,17 @@ const SideMenu: React.FC = () => {
               transition={trasitionConfig}
             />
           </Stack>
+
           <Stack>
             {
-              // the list goes here
+              list.map((item, index) => (
+                <SideItem
+                  key={index}
+                  isOpen={isOpen}
+                  name={item.name}
+                  icon={item.icon}
+                />
+              ))
             }
           </Stack>
         </Stack>
