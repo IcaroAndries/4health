@@ -23,7 +23,7 @@ const MainTemplate: React.FC<{ children: React.ReactNode }> = ({ children }) => 
         justify="center"
         spacing={vw('60px')}
       >
-        <Flex pl={vw('250px', '0px')}>
+        <Flex pl={vw('400px', '0px')}>
           {children}
         </Flex>
       </Stack>
