@@ -1,4 +1,4 @@
-export const StackStyle = {
+export const Stack = {
   baseStyle: {
     flexDirection: 'column',
     alignItems: 'center',

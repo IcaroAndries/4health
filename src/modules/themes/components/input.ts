@@ -1,4 +1,4 @@
-export const uiInput = {
+export const Input = {
   baseStyle: {
     width: '1000%',
     height: '3.5em',

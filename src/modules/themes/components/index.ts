@@ -1,9 +1,9 @@
-import { uiInput } from './input';
-import { StackStyle } from './Stack';
-import { uiText } from './uiText';
+import { Input } from './input';
+import { Stack } from './Stack';
+import { Text } from './Text';
 
 export const uiComponents = {
-  Text: uiText,
-  Stack: StackStyle,
-  Input: uiInput,
+  Text,
+  Stack,
+  Input,
 };

@@ -1,4 +1,4 @@
-export const uiText = {
+export const Text = {
   baseStyle: {
     fontFamily: 'sans-serif',
     fontSize: '1em',
